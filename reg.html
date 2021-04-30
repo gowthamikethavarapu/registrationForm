@@ -15,60 +15,63 @@
                 <h1>REGISTRATION FORM</h1>
                 <div class="mb-3 row">
                   <label for="fname" class="col-sm-2 form-label">First Name</label>
-                  <input type="text" class="col-sm-10 form-control" id="fname">
+                  <input type="text" class="col-sm-10 form-control" id="fname" required>
                   
                 </div>
                 <div class="mb-3 row">
                     <label for="fname" class="col-sm-2 form-label">Last Name</label>
-                    <input type="text" class="col-sm-10 form-control" id="lname">
+                    <input type="text" class="col-sm-10 form-control" id="lname" required>
                     
                   </div>
                   <div class="mb-3 row">
                     <label for="fname" class="col-sm-2 form-label">Email</label>
-                    <input type="email" class="col-sm-10 form-control" id="fname">
+                    <input type="email" class="col-sm-10 form-control" id="fname" required>
                     
                   </div>
                 <div class="mb-3 row">
-                    <label for="gender" class="col">Gender:</label>
-                    <div class="col">
+                    <label for="gender" class="col-sm-2">Gender:</label>
+                    <div class=col-sm-6>
                         <input type="radio">
                         <label for="female">Female</label>
-                        
-                    </div>
-                    <div class="col">
                         <input type="radio">
                         <label for="male">Male</label>
+                        
                     </div>
+                    
                     
                 </div>
                 <div class="mb-3 row">
                     <label for="dob" class="col-sm-2 form-label">Date of Birth</label>
-                    <input type="date" class="col-sm-6 form-control" id="dob">
+                    <input type="date" class="col-sm-6 form-control" id="dob" required>
                     
                 </div>
                 <div class="mb-3 row">
                     <label for="cname" class="col-sm-2 form-label">College name</label>
-                    <input type="text" class="col-sm-10 form-control" id="cname">
+                    <input type="text" class="col-sm-10 form-control" id="cname" required>
                     
                 </div>
                   
                 <div class="mb-3 row">
                     <label for="pnum" class="col-sm-2 form-label">Phone</label>
-                    <input type="number" class="col-sm-10 form-control" id="pnum">
+                    <input type="number" class="col-sm-10 form-control" id="pnum" required>
                     
                 </div>   
                 <div class="mb-3 row">
                     <label for="passportphoto" class="col-sm-2 form-label">Passport photo</label>
-                    <input type="file" class="col-sm-6 form-control" id="photo">
+                    <input type="file" class="col-sm-6 form-control" id="photo" required>
                     
                 </div>
                 <div class="mb-3 row">
                     <label for="branch" class="col-sm-2 form-label">Branch</label>
                     <select class=" col-sm-6 form-select " id="state">
-                      <option selected disabled value="">Choose...</option>
+                      <option selected disabled value="">CSE</option>
                       <option>CSE</option>
-                      <option>ESE</option>
+                      <option>ECE</option>
                       <option>EEE</option>
+                      <option>CIVIL</option>
+                      <option>MECH</option>
+                      <option>CHEM</option>
+                      <option>MARINE</option>
                       <option>IT</option>
                       <option>Others</option>
                     </select>
@@ -77,12 +80,12 @@
 
                  <div class="mb-3 row">
                     <label for="level" class="col-sm-2 form-label">experience level</label>
-                    <input type="range" class="col-sm-6 form-control" id="level">
+                    <input type="range" class="col-sm-6 form-control" id="level" required>
                     
                 </div>
                  <div class="mb-3 row">
                     <label for="github" class="col-sm-2 form-label">Github link</label>
-                    <input type="url" class="col-sm-6 form-control" id="github">
+                    <input type="url" class="col-sm-6 form-control" id="github" required>
                     
                 </div>
                  <div class="mb-3 row" style="padding-bottom: 30px;">
@@ -92,13 +95,13 @@
                 </div> 
                 <hr>
                 <div>
-                    <input type="checkbox">
+                    <input type="checkbox" required>
                     <label >I hereby confirm that the above mentioned details are correct and accurate</label>
                 </div>
          
-                <div class=but>
-                    <button type="reset" class="btn reset btn-primary  ">RESET</button>           
-                    <button type="submit" class="btn submit btn-primary ">SUBMIT</button>
+                <div class="but mb-3 row">
+                    <button type="reset"  class="btn reset btn-primary col-sm-5 ">RESET</button>           
+                    <button type="submit"  class="btn submit btn-primary col-sm-5 ">SUBMIT</button>
 
                 </div>
               </form>
